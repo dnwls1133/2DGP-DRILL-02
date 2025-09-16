@@ -2,6 +2,8 @@ from pico2d import *
 
 import math
 
+from pico2d import close_canvas
+
 open_canvas()
 
 # fill here
@@ -18,8 +20,8 @@ cy = height / 2
 count = 0
 theta = 1.0
 radius = cy -90
-x =  cx + radius * math.sin( theta *2* math.pi)
-y =  cy + radius * math.cos( theta *2* math.pi)
+x =  cx + radius * math.sin( theta * math.pi)
+y =  cy + radius * math.cos( theta * math.pi)
 while True:
     clear_canvas_now()
     grass.draw_now(400, 30)
